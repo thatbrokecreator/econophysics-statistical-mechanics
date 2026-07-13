@@ -70,3 +70,27 @@ measuring the resulting Gini coefficient and tail exponent.
   wealthy agents — closer to real consumption behavior.
 - **Taxation & redistribution:** add a tax on transactions feeding a public pool redistributed
   to the population, to study its effect on the Gini coefficient.
+
+  ## Validation Against Real-World Wealth Data
+
+Published empirical estimates put the Pareto tail exponent of US wealth at ~1.4–1.5
+(Klass et al. 2007 report 1.49 using Forbes 400 and survey data; more recent work using
+tax records finds a similar ~1.4). I compared this benchmark against my simulation's tail
+exponent across a range of α values.
+
+![Real Data Validation](results/real_data_validation.png)
+
+**Findings:**
+- At low α, the simulation's tail exponent (~5.5) is far thinner than real-world wealth
+  concentration — pure random exchange plus weak advantage cannot reproduce observed inequality.
+- The simulation only approaches the empirical benchmark (tail exponent ≈1.68 vs. real 1.49)
+  at a strong advantage bias (α≈1.0) — several times larger than initially tested values.
+- This suggests that matching real-world wealth concentration requires substantially stronger
+  compounding advantage than baseline preferential-attachment assumptions, a finding consistent
+  with literature noting that simple exchange models tend to understate top-tail concentration
+  without additional mechanisms (e.g., inheritance, capital income reinvestment).
+
+**Limitations:** This model captures only pairwise transaction dynamics and does not include
+inherited wealth, differential asset returns, or taxation — all known drivers of real-world
+tail concentration. The Hill estimator is also sensitive to the choice of top-fraction cutoff
+(5% used here) and sample size.
