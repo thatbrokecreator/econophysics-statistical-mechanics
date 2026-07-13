@@ -55,7 +55,7 @@ To understand how savings behavior and preferential attachment interact, I ran t
 simulation across a grid of λ (savings propensity) and α (advantage bias) values,
 measuring the resulting Gini coefficient and tail exponent.
 
-![Parameter Sweep](results/parameter_sweep.png)
+![Parameter Sweep](parameter_sweep.png)
 
 **Findings:**
 - Inequality increases smoothly and continuously with α — this is a gradual crossover,
