@@ -49,7 +49,22 @@ python model.py
 python validate.py
 ```
 
-## Next Steps / Possible Extensions
+## Results: Parameter Sweep
+
+To understand how savings behavior and preferential attachment interact, I ran the
+simulation across a grid of λ (savings propensity) and α (advantage bias) values,
+measuring the resulting Gini coefficient and tail exponent.
+
+![Parameter Sweep](results/parameter_sweep.png)
+
+**Findings:**
+- Inequality increases smoothly and continuously with α — this is a gradual crossover,
+  not a sharp phase transition.
+- Savings propensity substantially dampens how much a given advantage bias translates
+  into realized inequality: at λ=0.4, even the highest tested α only reached a Gini of
+  0.44, compared to 0.53 at λ=0.1 for the same α.
+- This suggests savings behavior is at least as important a lever on long-run inequality
+  as the strength of systemic advantage itself.
 
 - **Dynamic savings propensities:** make λ vary by wealth, so low-income agents save less than
   wealthy agents — closer to real consumption behavior.
