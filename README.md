@@ -78,7 +78,7 @@ Published empirical estimates put the Pareto tail exponent of US wealth at ~1.4�
 tax records finds a similar ~1.4). I compared this benchmark against my simulation's tail
 exponent across a range of α values.
 
-![Real Data Validation](results/real_data_validation.png)
+![Real Data Validation](econophysics-statistical-mechanics/results/real_data_validation.png)
 **Findings:**
 - At low α, the simulation's tail exponent (~5.5) is far thinner than real-world wealth
   concentration — pure random exchange plus weak advantage cannot reproduce observed inequality.
